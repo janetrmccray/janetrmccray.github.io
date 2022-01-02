@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        1 To 100 Chart
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Wamegs"
+  },
+  "headline": "1 To 100 Chart",
+  "datePublished": "2022-01-02",
+  "image": "https://i.pinimg.com/474x/5f/f3/34/5ff3340b1451369fdb50e8f0dbc54e36.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "year silver chart",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=1+to+100+chart",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16749227.trustedgatetocontent.com/c6/50/b8/c650b8bb7372e360024f86226a24867a.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            1 To 100 Chart
+            </a>
+        </h1>
+        <p>
+                            Best Wallpaper Ideas website. Search anything about Wallpaper Ideas in this website.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+<div style="text-align: center;">
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'a31fed4e6b206e7aa6de70c5e0104c3e',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.effectiveperformanceformat.com/a31fed4e6b206e7aa6de70c5e0104c3e/invoke.js"></scr' + 'ipt>');
+</script>
+</div>
+
+	</center>
+</div>
+
+        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>1 To 100 Chart</strong>. If your child is in a school and your worried about your child studies than this is the time that you should play the role of a parent and show the right way to your child we have all studied maths when we were in our school days and it was the only subject which most of us did not liked it not because it was hard but the concept was not that. 100 1200.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/2f/fb/3e/2ffb3e0fd1ae0a860176b0cc06fe4ee2.png" alt="Charts Of Number 1 100 Free 100 Chart Printable 100 Number Chart Free Printable Numbers" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5Ru8YPnDANINMMcfsXEvzDQkD-rhiTFNtEpf_SBtM-vOsDmnqka97rbEetlYFgnib8ko';">
+        <figcaption>Charts Of Number 1 100 Free 100 Chart Printable 100 Number Chart Free Printable Numbers from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Take the printout of these Multiplication Chart 1 to 100 and paste this chart in the kids study room. For example like a puzzle. Learning numbers 1 - 100.
+    </p>
+    <h3>100 1900.</h3>
+    <p>100 1400. What does Thirty Seven Times Two equal. Take a look at the other number charts posted in the images below. Multiplication chart 1-100.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Number Chart Lets Count To 100 Counting To 100 Number Chart 100 Number Chart" src="https://i.pinimg.com/originals/3d/3d/61/3d3d61ba0a918c88a62f0c2e59cccb58.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy8uh9P5fYFYQJowYbNKVmSnmCdshIpcv7yyLUBClAw1UtK6PFVH0XyB67KmmMW6yLwyI';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>If your child is in a school and your worried about your child studies than this is the time that you should play the role of a parent and show the right way to your child we have all studied maths when we were in our school days and it was the only subject which most of us did not liked it not because it was hard but the concept was not that.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Charts Of Number 1 100 Free 100 Chart Printable 100 Number Chart Free Printable Numbers" src="https://i.pinimg.com/originals/2f/fb/3e/2ffb3e0fd1ae0a860176b0cc06fe4ee2.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5Ru8YPnDANINMMcfsXEvzDQkD-rhiTFNtEpf_SBtM-vOsDmnqka97rbEetlYFgnib8ko';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>100 Times Table.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Printable Number Chart 1 100 Numbers 1 100 Printable Numbers Math Methods" src="https://i.pinimg.com/736x/6b/8b/fc/6b8bfcf520dc97e7ed0c188297c16a28.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9dH5tc3L4btpMVJ6aSiG3fayRQztgsBM0in752UyreHnPKZfzxa-SPmiXTo5myLhrr5Q';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Take a look at the other number charts posted in the images below.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Numbers 1 100 Chart By School Smarts Fully Laminated Durable Material Rolled In For Sale Online Ebay 100 Chart Fun Math Games Fun Math" src="https://i.pinimg.com/originals/9f/ff/b4/9fffb4d49eb22c7f523f7b962610470a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsqTdLjJXVqYjmKTKlJrv4yDVkH0KePc3kcTkUDVUlM5EoyXLTawzBw_IsJLfqSvYSzjY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>100 800.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Odd And Even Numbers Chart 1 100 Guruparents Numbers Preschool Math Charts How To Memorize Things" src="https://i.pinimg.com/originals/c5/cd/ac/c5cdac2ff17fe1eb5dbb61076c89b3e0.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgQ1dAP85xRIL0FWd7UsgRUV_-IoACjq_T6DqbTLp4KkL3okRHIkTamx--vgH_bSq0iwM';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Number names upto 100 is important to learn as a basic maths concept.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Carson Dellosa Publications Numbers Chart 100 Chart Numbers 1 100 Printable Numbers" src="https://i.pinimg.com/474x/d8/4e/2c/d84e2cc134365596bfbdf0470d823825.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiijSSh9jiLEVHYGCVBqnFJG4iF2I99H7MXH2EYx0ZWzADrEtvXN3_cGvdOkjecRTeJtc';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>There are up to 100 numbers on a hundred chart.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Math Ideas" src="https://i.pinimg.com/originals/7a/c4/1a/7ac41a9ffdacd46b390b63a4f0f1cafc.gif" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRENx6Ue_rpT6J2dS9OSosUeTgaM466Hw87JbSUnnH_aOMBI_MrIXLRE1xTKwX7mz76i9I';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>301 302 303 304 305 306 307 308 309 310 311 312 313 314 315 316 317 318 319 320 321 322 323 324 325 326 327 328 329 330 331 332 333 334 335 336 337 338 339 340.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Printable Number Chart 1 100 Printable Numbers 100 Chart Printable How To Memorize Things" src="https://i.pinimg.com/originals/19/5d/05/195d0543f563854769609260442054db.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuy2gOEegOOtbWnKY-LFbSS6OaHktcN8JQxi0cWamny_Jh3zbYGEHHdESOk0jHzURh03Y';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>If you are searching for the list of Prime Numbers from 1 to 100 then you have come to the right place.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Free Printable Numbers Chart 1 100 100 Chart Printable 100 Chart Free Math Worksheets" src="https://i.pinimg.com/originals/68/59/80/6859806d271014e50d3ccc1dd0b91bf7.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3tsSsrb1ez-RNDUctr8L4xk8G6hA2QgUUo0Y23wWzh2AIbaOc70d0T8bK2xDCzVQYp4o';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>The 1-100 number chart is available on cute shapes which will be loved by the kids.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/encyclopedia-of-chart-patterns.html"><i>&larr; encyclopedia of chart patterns</i></a>
+                                                                    
+                                        <a href="/pie-chart-maker-with-percentages.html"><i>pie chart maker with percentages &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Default Statcounter code for Event https://test.com/
+-->
+<script type="text/javascript">
+var sc_project=12535430; 
+var sc_invisible=1; 
+var sc_security="2fc74bb1"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics
+Made Easy - Statcounter" href="https://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/12535430/0/2fc74bb1/1/"
+alt="Web Analytics Made Easy - Statcounter"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+
+
+<div style="text-align: center;">
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'a31fed4e6b206e7aa6de70c5e0104c3e',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.effectiveperformanceformat.com/a31fed4e6b206e7aa6de70c5e0104c3e/invoke.js"></scr' + 'ipt>');
+</script>
+</div>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

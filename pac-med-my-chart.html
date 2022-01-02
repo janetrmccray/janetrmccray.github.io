@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Pac Med My Chart
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Wamegs"
+  },
+  "headline": "Pac Med My Chart",
+  "datePublished": "2022-01-02",
+  "image": "https://www.pacificmedicalcenters.org/wp-content/themes/pacmed/images/logo.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "year silver chart",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=pac+med+my+chart",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16749227.trustedgatetocontent.com/c6/50/b8/c650b8bb7372e360024f86226a24867a.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Pac Med My Chart
+            </a>
+        </h1>
+        <p>
+                            Best Wallpaper Ideas website. Search anything about Wallpaper Ideas in this website.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+<div style="text-align: center;">
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'a31fed4e6b206e7aa6de70c5e0104c3e',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.effectiveperformanceformat.com/a31fed4e6b206e7aa6de70c5e0104c3e/invoke.js"></scr' + 'ipt>');
+</script>
+</div>
+
+	</center>
+</div>
+
+        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Pac Med My Chart</strong>. Select the area where you receive care. Access your test results.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://els-jbs-prod-cdn.jbs.elsevierhealth.com/cms/attachment/dd6c5bd6-1cde-4ec9-b5a2-f0223bd5183c/gr1_lrg.jpg" alt="Three Year Overall Survival With Durvalumab After Chemoradiotherapy In Stage Iii Nsclc Update From Pacific Journal Of Thoracic Oncology" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUVGvdc1qDFqPcs6QPywQc1002PHjGqRVvlmW0BWlEb2NcuzbM39H3ltjDR7vpZYd4RSg';">
+        <figcaption>Three Year Overall Survival With Durvalumab After Chemoradiotherapy In Stage Iii Nsclc Update From Pacific Journal Of Thoracic Oncology from www.jto.org</figcaption>
+    </figure>
+        <p>
+        Access your test results. If you have any other questions or concerns you can contact us at 2066214150 or write us at the address above. When you receive care at PacMed Swedish or any other Providence site details from that visit will be now noted in your single MyChart record.
+    </p>
+    <h3>Call the MyChart Help Desk at 1-833-395-2035.</h3>
+    <p>Access your test results. A QR code is available in MyChart to easily access this information. At Pacific Medical Centers youll find more than 168 caring providers committed to offering the highest level of healthcare for you and the people you care about. All PacMed clinics will open at 9 AM and close at 5 PM.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On School Nursing" src="https://i.pinimg.com/originals/30/c1/84/30c18440ed0ccd6b1dedfd35c9f21580.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSefH9CGCw0ZbRGZHrS8aWsGZHoOepfNlvSKTCJX5sOI9DumiwAk8oJYFkTb0rfyj4_weU';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>If you dont see your care need in MyChart please schedule by calling 18884722633.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Three Year Overall Survival With Durvalumab After Chemoradiotherapy In Stage Iii Nsclc Update From Pacific Journal Of Thoracic Oncology" src="https://els-jbs-prod-cdn.jbs.elsevierhealth.com/cms/attachment/dd6c5bd6-1cde-4ec9-b5a2-f0223bd5183c/gr1_lrg.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUVGvdc1qDFqPcs6QPywQc1002PHjGqRVvlmW0BWlEb2NcuzbM39H3ltjDR7vpZYd4RSg';" />
+        <small>Source: www.jto.org</small>
+                    <p>Inclement Weather Alert - Thursday December 30.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pacific Medical Center Puyallup Puyallup Medical Clinic Puyallup Doctor" src="https://www.pacificmedicalcenters.org/wp-content/uploads/2020/05/puyallup_web.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4eC2Twkl4Isch9XR2zrU6YkfHBTP0ndl7F-RQd_KnIC38JaEzSsOivKXn482M3ozX1A';" />
+        <small>Source: www.pacificmedicalcenters.org</small>
+                    <p>If you have any other questions or concerns you can contact us at 2066214150 or write us at the address above.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Premature Atrial Complex Pac Litfl Ecg Library Diagnosis" src="https://litfl.com/wp-content/uploads/2018/08/Premature-Atrial-Complex-PAC-1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSub-c_uvoVIg2tTdCULOAL-xb_QLV3FkAtep9gGn9js7mu6_MCULdgxPzkr1jdM8Bdqg';" />
+        <small>Source: litfl.com</small>
+                    <p>For other care needs please call 18884722633.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Bringing Health Care Home Be Boundless" src="https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/85/2020/10/29145540/Dr-Danyelle-Thomas-1920px.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqs-syBK967HnG4sm3y2fPFHDTb16MlYyXMyVmaOeefZtQPi288XjZ8YTnOS2bMa7ooSQ';" />
+        <small>Source: www.washington.edu</small>
+                    <p>If you dont see your care need in MyChart please schedule by calling 18884722633.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pacific Medical Center Beacon Hill Seattle Medical Clinic Seattle Doctor" src="https://www.pacificmedicalcenters.org/wp-content/uploads/2020/05/beacon_hill_160.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBrELxHeYSkxa_3vvjvNnw_6wWh8kY6l8J9ZiEYut5Zp1u6x8IqjR2aVrYQAOC8k_qVw';" />
+        <small>Source: www.pacificmedicalcenters.org</small>
+                    <p>Access additional details about prior visits by signing into your account.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pacific Medical Center Totem Lake Totem Lake Medical Clinic Totem Lake Doctor" src="https://www.pacificmedicalcenters.org/wp-content/uploads/2020/05/totem_lake_160.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnapzYy0LZEFfQz9ttTm1bWiUXrVojxtEQijKIvl8IZHhwLmbstjoGIBA8mGZGhutt8g';" />
+        <small>Source: www.pacificmedicalcenters.org</small>
+                    <p>Call the MyChart Help Desk at 1-833-395-2035.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pavilion For Women And Children Providence Regional Medical Center Everett Providence" src="https://www.providence.org/-/media/Project/psjh/shared/Images/Locations/Thumbnails/wa/pavilion-for-women-and-chilldren-sm.jpg?rev=702ab3a0a58d4ca8b1d089aee7344f65" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcfaYPXJBaOomN26MIDuKBfGYWzAX1i4AWeTeGzoIZXLYBH2JnJOGDdaN8KZuRUL5Q2fI';" />
+        <small>Source: www.providence.org</small>
+                    <p>Click below to pay as a guest.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cpmc Van Ness Campus Sutter Health" src="https://www.sutterhealth.org/document/guid/2D5F22EC-9C2B-4525-B1D1-5C2735BDD86E" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS766EiNkM5l04NdHFq3goscevpKopEQY_uMoRCu-3YKhWXQu0XEo3DxEQOckPysXWSTaA';" />
+        <small>Source: www.sutterhealth.org</small>
+                    <p>Do I need a COVID-19 vaccine.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/aperture-shutter-speed-iso-chart.html"><i>&larr; aperture shutter speed iso chart</i></a>
+                                                                    
+                                        <a href="/madison-reed-hair-color-chart.html"><i>madison reed hair color chart &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Default Statcounter code for Event https://test.com/
+-->
+<script type="text/javascript">
+var sc_project=12535430; 
+var sc_invisible=1; 
+var sc_security="2fc74bb1"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics
+Made Easy - Statcounter" href="https://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/12535430/0/2fc74bb1/1/"
+alt="Web Analytics Made Easy - Statcounter"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+
+
+<div style="text-align: center;">
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'a31fed4e6b206e7aa6de70c5e0104c3e',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.effectiveperformanceformat.com/a31fed4e6b206e7aa6de70c5e0104c3e/invoke.js"></scr' + 'ipt>');
+</script>
+</div>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

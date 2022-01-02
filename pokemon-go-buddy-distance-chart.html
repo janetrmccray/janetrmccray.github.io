@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Pokemon Go Buddy Distance Chart
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Wamegs"
+  },
+  "headline": "Pokemon Go Buddy Distance Chart",
+  "datePublished": "2022-01-02",
+  "image": "https://i.pinimg.com/736x/3d/e2/a7/3de2a70eb928e9fa98330db7ad5d5bb0--free-candy-distance.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "year silver chart",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=pokemon+go+buddy+distance+chart",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16749227.trustedgatetocontent.com/c6/50/b8/c650b8bb7372e360024f86226a24867a.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Pokemon Go Buddy Distance Chart
+            </a>
+        </h1>
+        <p>
+                            Best Wallpaper Ideas website. Search anything about Wallpaper Ideas in this website.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+<div style="text-align: center;">
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'a31fed4e6b206e7aa6de70c5e0104c3e',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.effectiveperformanceformat.com/a31fed4e6b206e7aa6de70c5e0104c3e/invoke.js"></scr' + 'ipt>');
+</script>
+</div>
+
+	</center>
+</div>
+
+        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Pokemon Go Buddy Distance Chart</strong>. DPS TDO Comparer. Our search string guide contains a comprehensive explanation of all possible strings and combinations for filtering Pokemon.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/62/b0/a9/62b0a952d76f5e02a1a0645ea99defcc.jpg" alt="10 Pokemon Go Tips Charts Infographics For Trainers Hongkiat Pokemon Pokemon Go Pokemon Names" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZZ__gz3UZ6VlC0O9T1ZA3ftH6HwNpoefhI4u_eNu2HKIVyFB6GAhEI72m6szvuw5LG94';">
+        <figcaption>10 Pokemon Go Tips Charts Infographics For Trainers Hongkiat Pokemon Pokemon Go Pokemon Names from in.pinterest.com</figcaption>
+    </figure>
+        <p>
+        5km Buddy Distance chart. Pokemon Go Buddy Distance Chart. Moves in Pokemon GO.
+    </p>
+    <h3>Every Pokemon Has Different Distance Required.</h3>
+    <p>The new Pokemon Go buddy system has finally arrived. 100000 Stardust 100 Candy. 1 km Buddy distance. 20 km Buddy distance.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="New Pokemon On Twitter Pokemon Pokemon Go Pokemon Go Evolution" src="https://i.pinimg.com/originals/a5/f3/6f/a5f36f03e9f99c8d36a0d7bc2659650f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDAmQEuQHsmu4H3i4K0VU1EijUdYLnKBoY9gdpYaArMEpneubrloO4DuVIWcfnjVQIGvA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>100000 Stardust 100 Candy.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="New Pokemon Go Buddy System Update Candy Rewards List Imgur Pokemon Go Buddy Pokemon Go Pokemon Go Buddy Candy" src="https://i.pinimg.com/originals/6e/f1/b6/6ef1b6052cc7e43e36797be064437222.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyC2ooqqPJB-NIPxTna7WXMtJVHlH-JYW6Vwj3RCw8DkQipu_BOQBtaCr0e2oap3pZO-Q';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>152 rows Chart.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1km Per Candy Buddies Relevant List Per Other Gamers Geodude Aron Magicarp Wailmer And Swablu Pokemon Go Buddy Pokemon Go Pokemon Go Buddy Chart" src="https://i.pinimg.com/736x/ac/ff/4a/acff4a22e206ef0c221d6d82c6afde8d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToADT187zXUZn5er6DcTQgBse8vFRsFOz6geFWhyOKmXESjvMxBVpX3pHW01Q-5fumkEo';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>5 km Buddy distance.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pokemon Go Buddy Distance Chart For When Buddy Pokemon Drop Rewards Eurogamer Net Pokemon Go Buddy Pokemon Go Pokemon Go Buddy Distance" src="https://i.pinimg.com/originals/25/84/7b/25847bca23015daabc56d5be1b93ad56.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOeIfOatJ2uzmnazUeQvy9u5q_CyOoN4_0mz3lIuRGgjofEK1Un04Trjcdq1pFX9pMt54';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Use card view on Pokemon lists Enable Dark.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="New Pokemon Go Buddy System Update Candy Rewards List Imgur Pokemon Go Buddy Pokemon Go Pokemon Go Buddy Candy" src="https://i.pinimg.com/736x/6e/f1/b6/6ef1b6052cc7e43e36797be064437222--news-pokemon-pokemon-go.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO8kMq1vWlRKIuv1AoFSuDYoV03V_XQjxhCTxLitbAs7u4TAXPMg2i5LZC9SGryAVA-tE';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Pokémon Go Search Bar Strings Cheat Sheet - Pokémon GO Hub.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pokemon Go Egg Distances Pokemon Go Pokemon Pokemon Go Buddy" src="https://i.pinimg.com/originals/2a/bb/9c/2abb9c2472da02babb90783bc27ab697.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhvNGcsxWUoUjQb61KXPivZMoPcgJNfFUcCPH2HxgCnOUl4taZbR0sgngLdO5jY3e5VQI';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>20 km Buddy distance.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Couple Of Gaming On Twitter Pokemon Go Pokemon Pokemon Names" src="https://i.pinimg.com/originals/bf/08/7b/bf087b5938d17904ef9de3a5a726e5df.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA97UNrIs708YxB9LfkS1IbEN0i6VEa-5X-id7XVro6m3G6uvPNRG65c2hWdUlmQL_wRQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Pokémon Go Search Bar Strings Cheat Sheet - Pokémon GO Hub.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Nerd Out" src="https://i.pinimg.com/originals/72/a6/c5/72a6c5abdee61479c26b6d23a038390f.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx1BI4cgTTe-FXmM1g2WJ3VU7L4TIaquCA0NDJlFB8fN_JNEaONDhJTWHe_qsR7wG2sQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Pokemon Go Buddy Chart.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pokemon Go Buddy System Distance Chart For When Buddy Pokemon Drops Rewards Eurogamer Net Pokemon Go Pokemon Go Buddy Pokemon" src="https://i.pinimg.com/736x/77/14/b2/7714b287c8bdc950ffea18e7338b9bd4--gym-training-go-gym.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRti-D2bDYEYx6v4NEx2UP10tZSJ6Q0Lb4cceCcPrvzgX_Qu_AZIbfMSa26Tib_xEhWGPQ';" />
+        <small>Source: in.pinterest.com</small>
+                    <p>Pokemon Go Type Chart Gen 1 And 2 They are significant due to the fact that they decide the power of specific attack types.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/astro-cafe-natal-chart.html"><i>&larr; astro cafe natal chart</i></a>
+                                                                    
+                                        <a href="/opinion-writing-anchor-chart.html"><i>opinion writing anchor chart &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Default Statcounter code for Event https://test.com/
+-->
+<script type="text/javascript">
+var sc_project=12535430; 
+var sc_invisible=1; 
+var sc_security="2fc74bb1"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics
+Made Easy - Statcounter" href="https://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/12535430/0/2fc74bb1/1/"
+alt="Web Analytics Made Easy - Statcounter"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+
+
+<div style="text-align: center;">
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'a31fed4e6b206e7aa6de70c5e0104c3e',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.effectiveperformanceformat.com/a31fed4e6b206e7aa6de70c5e0104c3e/invoke.js"></scr' + 'ipt>');
+</script>
+</div>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

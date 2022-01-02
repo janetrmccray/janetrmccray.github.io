@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        What Is A Gantt Chart
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Wamegs"
+  },
+  "headline": "What Is A Gantt Chart",
+  "datePublished": "2022-01-02",
+  "image": "https://i.pinimg.com/736x/19/eb/71/19eb713e2f42c2645ac89750b19bfc8f.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "year silver chart",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+is+a+gantt+chart",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16749227.trustedgatetocontent.com/c6/50/b8/c650b8bb7372e360024f86226a24867a.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            What Is A Gantt Chart
+            </a>
+        </h1>
+        <p>
+                            Best Wallpaper Ideas website. Search anything about Wallpaper Ideas in this website.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+<div style="text-align: center;">
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'a31fed4e6b206e7aa6de70c5e0104c3e',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.effectiveperformanceformat.com/a31fed4e6b206e7aa6de70c5e0104c3e/invoke.js"></scr' + 'ipt>');
+</script>
+</div>
+
+	</center>
+</div>
+
+        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>What Is A Gantt Chart</strong>. A Gantt chart is a project management tool that illustrates a project plan. A Gantt chart is a bar chart that provides a visual view of project tasks scheduled over time.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/ed/cb/15/edcb15d042ab557b337069b12bcc9d5a.png" alt="Gantt Chart Template For A Business Plan Plan Analysis Implementation And Completion Of A Business Plan Get Th Gantt Chart Templates Gantt Chart Templates" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLxiKcCDCkM5BXGLlrid43BQmuUKBSRpWjp9TqacpCmB2cJtXrSYahLrc_c8oHX7bCXjk';">
+        <figcaption>Gantt Chart Template For A Business Plan Plan Analysis Implementation And Completion Of A Business Plan Get Th Gantt Chart Templates Gantt Chart Templates from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Gantt Chart is a tracking chart to represent the plans in graphical representation. A Gantt chart is a bar chart that provides a visual view of project tasks scheduled over time. In simple words a Gantt chart is a visual view of tasks scheduled over time.
+    </p>
+    <h3>One of the main components of a Gantt chart the dates.</h3>
+    <p>A Gantt chart is a useful graphical tool which shows activities or tasks performed against time. Gantt charts were developed by mechanical engineer Henry Gantt more than 100 years ago and have been a staple of project managers ever since. On the left of the chart is a list of the activities and along the top is a suitable time scale. What should a Gantt chart include.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gantt Chart Template For Design Project Gantt Chart Gantt Chart Templates Timeline Design" src="https://i.pinimg.com/736x/b3/8a/06/b38a064e716547305a1cd611a2cdb331--simple-designs-design-projects.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLUGM1Bxfh2RhR31pcI2Eh975xxqQk39yrhwL35FlQqodfN9NiC2cN3-rqZYHVHEn9c8g';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>A Gantt chart is a bar chart that provides a visual view of project tasks scheduled over time.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="What Is A Gantt Chart And How To Use Gantt Chart Gantt Chart" src="https://i.pinimg.com/736x/8e/c2/f0/8ec2f0ac5e58f289132a0b782e0c2d8c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDBG2m3zt0zmheYGR7MOaYJszilejaolExdUvgGn86kkU3YCe6_jr-CbMSHhgQWK9GrS0';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>It creates a visual view of all these timelines and dependencies that makes it easy for the user.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Example Of Gantt Chart For Research Project Sample Gantt Chart For Research Proposal Lovely D Gantt Chart Gantt Chart Templates Gantt" src="https://i.pinimg.com/736x/89/85/88/8985882aeb1d44495e6196fad9689142.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqF7OGyIFOjkS8WXT7HpWokr7DzJc_e4f4_0VunG2paHMWgUiTEuhZLEFSDL7fOnjfHb0';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Project management timelines and tasks are converted into a horizontal bar chart showing start and end dates as well as dependencies scheduling and deadlines.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Excell Gantt Chart Template Gantt Chart Templates Gantt Chart Chart" src="https://i.pinimg.com/originals/4e/06/9f/4e069f03273b2fdb7d5b8f7806c3c50b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWFlou0Rwk7CXYK_1g7hzO0EH3xmET1Y5v8NIlAw-PRGATcKBvaLE8uyCC66PN4G2Yclc';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>What should a Gantt chart include.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ppt Gantt Chart Template Inspirational 7 Powerpoint Gantt Chart Templates Free Sample Example Gantt Chart Templates Powerpoint Chart Templates Gantt Chart" src="https://i.pinimg.com/736x/86/42/a2/8642a207fa7917322b6a7f083f150deb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFOwARFqqXGxHHUqHHP1ZJTkoBIhxtWPtGCekldTjygQh-wOiQHzz_J261gKmhZKMLhZQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Gantt charts were developed by mechanical engineer Henry Gantt more than 100 years ago and have been a staple of project managers ever since.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Final Year Project Media Innovation Gantt Chart Major Project Gantt Chart Gantt Chart" src="https://i.pinimg.com/originals/37/a2/ea/37a2ea26dc2ce7c62a79ff383fb43710.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy4zIlP2D0Vyo6CzQWjxmMJDkwGDYXOwwLsR-wvBiBlkPsN-lEzinx_ExIWzcxKRefvxY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>It consists of a list of tasks and bars depicting each tasks progress.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gantt Chart Template For A Business Plan Plan Analysis Implementation And Completion Of A Business Plan Get Th Gantt Chart Templates Gantt Chart Templates" src="https://i.pinimg.com/originals/ed/cb/15/edcb15d042ab557b337069b12bcc9d5a.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLxiKcCDCkM5BXGLlrid43BQmuUKBSRpWjp9TqacpCmB2cJtXrSYahLrc_c8oHX7bCXjk';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>It is also known as visual presentation of a project where the activities are broken down and displayed on a chart which makes it is easy to understand and interpret.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="12 Months Gantt Chart With Flat Colors Powerpoint Template 4 Gantt Chart Gantt Chart Templates Gantt" src="https://i.pinimg.com/736x/c6/0b/b2/c60bb2954a29e30d512a5424319e0d81.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToMfp9GOfxO9I_WeMqoi5iHl3qJvNY04Gt5NVMv17BXtkpRo0U5LltoP_limhqniYZw1Q';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>A Gantt chart is used for project planning.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Free Gantt Chart Excel Template Download Now Teamgantt Gantt Chart Templates Gantt Chart Chart" src="https://i.pinimg.com/originals/90/18/51/901851686c41021a4d245b364c31ffe5.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcmuACujq9sNFzMIMR4GihECPQuy_Ji9HVPnlBoBCUVj7CRekOqtQeSdl52Vqr97cQimU';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>A Gantt Chart is a graphical representation used in project management that will show the length of time tasks in the project should take Gantt Chart for Accreditation with Dependency and Critical Path as measured against real time.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/my-chart-uc-davis.html"><i>&larr; my chart uc davis</i></a>
+                                                                    
+                                        <a href="/cincinnati-reds-seating-chart.html"><i>cincinnati reds seating chart &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Default Statcounter code for Event https://test.com/
+-->
+<script type="text/javascript">
+var sc_project=12535430; 
+var sc_invisible=1; 
+var sc_security="2fc74bb1"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics
+Made Easy - Statcounter" href="https://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/12535430/0/2fc74bb1/1/"
+alt="Web Analytics Made Easy - Statcounter"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+
+
+<div style="text-align: center;">
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'a31fed4e6b206e7aa6de70c5e0104c3e',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.effectiveperformanceformat.com/a31fed4e6b206e7aa6de70c5e0104c3e/invoke.js"></scr' + 'ipt>');
+</script>
+</div>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

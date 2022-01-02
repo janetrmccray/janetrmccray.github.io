@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Ms Project Gannt Chart
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Wamegs"
+  },
+  "headline": "Ms Project Gannt Chart",
+  "datePublished": "2022-01-02",
+  "image": "https://i.pinimg.com/originals/fe/3f/8b/fe3f8b1d4a075af26dee9d6da94c6bab.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "year silver chart",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=ms+project+gannt+chart",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16749227.trustedgatetocontent.com/c6/50/b8/c650b8bb7372e360024f86226a24867a.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Ms Project Gannt Chart
+            </a>
+        </h1>
+        <p>
+                            Best Wallpaper Ideas website. Search anything about Wallpaper Ideas in this website.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+<div style="text-align: center;">
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'a31fed4e6b206e7aa6de70c5e0104c3e',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.effectiveperformanceformat.com/a31fed4e6b206e7aa6de70c5e0104c3e/invoke.js"></scr' + 'ipt>');
+</script>
+</div>
+
+	</center>
+</div>
+
+        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Ms Project Gannt Chart</strong>. What is a Gantt chart exactly. Format in case you want to upload it to that program or save it afterward.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/474x/72/13/ee/7213ee6c236f79cfe503b77004da9782.jpg" alt="Download A Sample Microsoft Project Construction Schedule B4ubuild Com Microsoft Project Schedule Template Project Management Templates" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrJGzvVBGYtZu_DgwMLUzDdET0ZQAqNW8gzB30WtzwYyo40YuVwlN2CUX_V0shMXbzK6Q';">
+        <figcaption>Download A Sample Microsoft Project Construction Schedule B4ubuild Com Microsoft Project Schedule Template Project Management Templates from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        To export the Gantt chart go to the List area of your project. You can use someones templates or create your own. Repeat for every task or milestone connected to your project.
+    </p>
+    <h3>In other words each project phase must complete before the next step can begin and phases are never repeated.</h3>
+    <p>Another way would be to take a screenshot of the Gantt chart open in Microsoft Project and paste it into the Microsoft Word document. Click on File - click on Options - click on Customize Ribbon. A Gantt chart is a bar chart that contains more information about the project than a regular bar chart. Ms Project Gantt Chart.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Download A Sample Microsoft Project Construction Schedule Gantt Chart Templates Gantt Chart Schedule Of Works" src="https://i.pinimg.com/736x/a8/c9/c4/a8c9c4918f189167fb62d24270b87e8d--microsoft-project-building-a-house.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxeKsckED_ULlvuSfCH3uA5MwIPHS-TiqgySWtThxguksa6qcgVEF3kYtxHcppCa4_mJs';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>A project could be an activity that can finish in a day or it could cover months and years.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Office Timeline Microsoft Project Presentation Tool Gantt Chart Templates Gantt Chart Gantt" src="https://i.pinimg.com/originals/ca/b8/6e/cab86e0a9f3a14ab5b6005907e6d3e92.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw4T2gP6yCbEv6OwD7z5bZDrgcBuJRmpaHYlLKcRa_p7a6kiwQoDLfItuRgP-1v62vgiw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>You can enter the start dates duration and current status of each task and share them with your team to keep task owners accountable.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Project Gantt Chart Template For Microsoft Excel That Helps With Creating And Managing Simple And Or Complica Gantt Chart Templates Gantt Chart Excel Templates" src="https://i.pinimg.com/originals/5d/92/f5/5d92f52617f93e9b869ed581ac85b036.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyRM2mYwldqapZJBIuwkWeMdTsOGWmEBcSat6X7oLRjg-Fv8Xd8tMRKR2Q52PEBjgIpeo';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Click the View tab.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Documenting Positive Lag In Microsoft Project Microsoft Project Gantt Chart Gantt" src="https://i.pinimg.com/736x/a1/91/c7/a191c7fb3356523d40b39c8c1c85c992.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuOhKE1kfIELpUh4gJunBtX9uCQxOcCZQHi8u0LSGQRtMX8JlkGpxbQCfRLxjTB4h1ihM';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>In the row labeled Right click the Name field.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Displaying Two Baselines In Microsoft Project Gantt Chart Microsoft Project Gantt Chart Microsoft" src="https://i.pinimg.com/originals/d8/e8/ab/d8e8ab674390ad52306ee7b3ddd5a315.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgEYtar003cY-B6MG3MffpFyC3KdPbwZqSw5ltgHexwn2lutmMyQqVdXy9ZK6m8oP20XU';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Paste into a PowerPoint slide.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="How To Create A Project Management Plan Step By Step Gantt Chart Templates Gantt Chart Project Management Templates" src="https://i.pinimg.com/736x/54/62/0d/54620d2bae729981b24332b7b149dc9e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrlB3uth_53LvxTmQ4-bY6E6h0qlWdX-vaVISectqrboPtijuE12cV2n9DMXaS6Jq-9jU';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>In the Bar Styles box click the Text tab.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Download A Sample Microsoft Project Construction Schedule B4ubuild Com Microsoft Project Schedule Template Project Management Templates" src="https://i.pinimg.com/474x/72/13/ee/7213ee6c236f79cfe503b77004da9782.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrJGzvVBGYtZu_DgwMLUzDdET0ZQAqNW8gzB30WtzwYyo40YuVwlN2CUX_V0shMXbzK6Q';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Microsoft Project Gantt Chart free download - Gantt Chart Builder Excel Gantt Chart Designer Microsoft Office Project Standard 2007 and many more programs.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Displaying The Task Path In Microsoft Project Microsoft Project Gantt Chart Gantt Chart Templates" src="https://i.pinimg.com/originals/fe/3f/8b/fe3f8b1d4a075af26dee9d6da94c6bab.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAv4eMuz7Rdc6vQ0CHhNRTx4cwREPb8L4tjbAb2q5_u_P_Bm2MRyG1G8Wl7cSK-X6kKU4';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Simply put a Gantt chart is a visual view of tasks scheduled over time.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gantt Chart Rollup Views Onepager Pro Gantt Chart Chart Gantt" src="https://i.pinimg.com/736x/30/40/e3/3040e3b66c37bf3af7147eb665ff0117--ms-project-charts.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1lPx2wXnM3KYPP-AdH6eCoDL16aobcDMLDDx3V9uNJq4ce7IDXscrwszrye2FC0UsaOM';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Based on the long-standing Gantt chart model this project planning template in Excel uses a simple visual representation to show how a project will be managed over time.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/foxwoods-grand-theater-seating-chart.html"><i>&larr; foxwoods grand theater seating chart</i></a>
+                                                                    
+                                        <a href="/helly-hansen-size-chart.html"><i>helly hansen size chart &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Default Statcounter code for Event https://test.com/
+-->
+<script type="text/javascript">
+var sc_project=12535430; 
+var sc_invisible=1; 
+var sc_security="2fc74bb1"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics
+Made Easy - Statcounter" href="https://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/12535430/0/2fc74bb1/1/"
+alt="Web Analytics Made Easy - Statcounter"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+
+
+<div style="text-align: center;">
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'a31fed4e6b206e7aa6de70c5e0104c3e',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.effectiveperformanceformat.com/a31fed4e6b206e7aa6de70c5e0104c3e/invoke.js"></scr' + 'ipt>');
+</script>
+</div>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

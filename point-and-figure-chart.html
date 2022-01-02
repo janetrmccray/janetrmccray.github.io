@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Point And Figure Chart
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Wamegs"
+  },
+  "headline": "Point And Figure Chart",
+  "datePublished": "2022-01-02",
+  "image": "https://i.pinimg.com/564x/52/7c/e8/527ce8227bf92bd6a0386ca023decc60.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "year silver chart",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=point+and+figure+chart",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//pl16749227.trustedgatetocontent.com/c6/50/b8/c650b8bb7372e360024f86226a24867a.js'></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Point And Figure Chart
+            </a>
+        </h1>
+        <p>
+                            Best Wallpaper Ideas website. Search anything about Wallpaper Ideas in this website.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+<div style="text-align: center;">
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'a31fed4e6b206e7aa6de70c5e0104c3e',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.effectiveperformanceformat.com/a31fed4e6b206e7aa6de70c5e0104c3e/invoke.js"></scr' + 'ipt>');
+</script>
+</div>
+
+	</center>
+</div>
+
+        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Point And Figure Chart</strong>. Time is not a factor in P. Pin-point the exact time to buy and sell and know what to trade.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/736x/c1/8c/1b/c18c1b26b8a44e79c13329237216cf09.jpg" alt="Wyckoff Analytics Setting Price Targets Using Wyckoff Point And Figure Projections Sacred Traders Investing Analytics Teaching" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5jgvkUVrOBC_kJfJerUijKvIoGkgXZxlcNY9iNP0Ir4Yw4W1Jjb2uphSxqHQy4F60EAI';">
+        <figcaption>Wyckoff Analytics Setting Price Targets Using Wyckoff Point And Figure Projections Sacred Traders Investing Analytics Teaching from in.pinterest.com</figcaption>
+    </figure>
+        <p>
+        13px 14px 15px 16px 18px. Yes You can beat the market with our Professional Advisory Services. It filters insignificant market noise and focuses on what price is doing.
+    </p>
+    <h3>Then when the price changes direction and starts to.</h3>
+    <p>A point-and-figure chart plots movements of the prices such as stocks commodities or futures without considering the time. Point and Figure charting is a technical analysis technique that uses a chart with Xs and Os for predicting financial asset prices. First the price of the security drops to 27c and then an increase to 30c which is followed by a decline to 27c again. These charts evolve as prices move.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Point And Figure Chart Chart Diagram Figures" src="https://i.pinimg.com/736x/db/4f/a0/db4fa0a4c2b6ae0c4e537e92b8edd870--charts-tech.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8lz5rcXGbqbg9eW_PjLwuDWOX7JQchBCeiUEJ3bpuvjnbRNtF9MGdi51Ih5SOTF1PU8M';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Point and Figure charts are best suited to find trend and reversal points of a stock.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Point And Figure Charts Learncharts Forexabode Com Technical Analysis Indicators Technical Analysis Chart" src="https://i.pinimg.com/originals/74/52/1d/74521d1aaff5027527c9685b2c650ab1.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnyNA9Ihr2T25QHIaL1-LLCUFCrxgwdEqiO1ZlA6-uF8681_ekAvAgkgEIAViJWXIUEvc';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>PF patterns are very easy to find that filters out.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Point And Figure Charts Learn Forex Trading Learn Forex Trading Forex Trading Forex" src="https://i.pinimg.com/originals/49/0e/c3/490ec331684495f76c743cf8c2f7ef9e.gif" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3_ODhvKztHtSqJezXopurW6ybuMWKlEGKewXEfO2fVnZXQBa4AqSlVxma5wcKMTJrxm8';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>The point and figure chart is very unique as it does not plot prices against time like other technical analysis charts.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Stock Market Basic Types Of Charts Chart Guru Chart Technical Analysis Forex" src="https://i.pinimg.com/600x315/cc/ca/9b/ccca9b5346a2691948ef50c8dc230b12.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-GeYh_iydcQ6MWQnFhIq9kMDJy1xJNq7IdjseRp3F2rBf6JErUmBMb0j-KCOLxg0pZvI';" />
+        <small>Source: in.pinterest.com</small>
+                    <p>Users will learn how to identify support and resistance as well as how to draw PF trend lines.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Nifty Point And Figure Chart Stockmaniacs Chart Free Chart Nifty" src="https://i.pinimg.com/736x/62/37/a0/6237a04089f0d497d983fa870e5c7246.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH6u_McmnB6r4dgqPs6NF3S8TDgw9SKmci7PdLvYJ3UwAbjjqHA26XW0hYrK3EE9UM5nc';" />
+        <small>Source: in.pinterest.com</small>
+                    <p>First the price of the security drops to 27c and then an increase to 30c which is followed by a decline to 27c again.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Indiavix India Vix Index India Free Chart Chart Index" src="https://i.pinimg.com/originals/27/6d/ff/276dff4b0c48aef21e2e747abddd913f.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ658eLa3DFutI3ushoGrMZ2VZ6UUjDvxEWHSZqo55Pxx7xQG49exkHri7su6RhA1guAeE';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>It filters insignificant market noise and focuses on what price is doing.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="That Figures Using Point And Figure Charts To Stay In The Trend Online Trading Academy Online Trading Trading Charts Lesson" src="https://i.pinimg.com/736x/e2/dc/fd/e2dcfdb75e38ec986356896952d08e4b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRug2M0bHutcZxDBOvmr7hfSsN2Hdb74ve8ZEFFTb8ykPUIYSG1yEIKLWIF2Us3JLebRI4';" />
+        <small>Source: za.pinterest.com</small>
+                    <p>Introduction to Point Figure Charts - This article shows how to construct PF charts with a step-by-step example.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Point And Figure Price Trade Charting Online Trading Academy Tipps Neue Wege Investieren" src="https://i.pinimg.com/originals/2e/3d/a8/2e3da8131989f61816e312432c85cd0c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvXeR7wg9t05cDa2kMXdL6KhhXhmS60ENFbHR97qbQIdMUsVmgMvtLeWM4RzYf8rfqF20';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>No movement in price means no change in.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="What Are Point Figure Charts Stock Charts Stock Chart Patterns Chart" src="https://i.pinimg.com/474x/50/24/a6/5024a6196e3ca0bb7528f16893567887.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ59O4ZSjYYdiPq7Q2RLE1LAfVU2v6XQUliOsY4CR4YF_ofkBJ1-R8c-bMHGZyDRUDfSts';" />
+        <small>Source: in.pinterest.com</small>
+                    <p>Time is not a factor in P.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/acid-and-base-chart.html"><i>&larr; acid and base chart</i></a>
+                                                                    
+                                        <a href="/abercrombie-kids-size-chart.html"><i>abercrombie kids size chart &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Default Statcounter code for Event https://test.com/
+-->
+<script type="text/javascript">
+var sc_project=12535430; 
+var sc_invisible=1; 
+var sc_security="2fc74bb1"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics
+Made Easy - Statcounter" href="https://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/12535430/0/2fc74bb1/1/"
+alt="Web Analytics Made Easy - Statcounter"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+
+
+<div style="text-align: center;">
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'a31fed4e6b206e7aa6de70c5e0104c3e',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.effectiveperformanceformat.com/a31fed4e6b206e7aa6de70c5e0104c3e/invoke.js"></scr' + 'ipt>');
+</script>
+</div>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>
